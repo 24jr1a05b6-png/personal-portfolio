@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #111827;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2,
+nav a {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+.home {
+    min-height: 90vh;
+    padding: 80px 10%;
+    background: #f3f4f6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home-text h1 span {
+    color: #2563eb;
+}
+
+.home-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    max-width: 650px;
+}
+
+.welcome {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.second-btn {
+    background: #111827;
+}
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-image img {
+    width: 380px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+/* About Section */
+#about {
+    background: white;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.section-tag {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.about-content > p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+.about-info {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.about-info div {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.about-info strong,
+.about-info span {
+    display: block;
+}
+
+.about-info strong {
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
+    background: #f8fafc;
+}
+
+#skills h2 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.skills-description {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    color: #4b5563;
+}
+
+/* Skills Cards Container */
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Skill Card */
+.skill-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+
+    cursor: pointer;
+}
+
+/* Skill Title */
+.skill-card h3 {
+    font-size: 28px;
+    color: #2563eb;
+    margin-bottom: 10px;
+
+    transition: color 0.3s ease;
+}
+
+/* Skill Description */
+.skill-card p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.skill-card:hover {
+    transform: translateY(-10px);
+
+    background: #2563eb;
+
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.25);
+}
+
+.skill-card:hover h3,
+.skill-card:hover p {
+    color: white;
+}
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}/* =========================
+   PROJECTS SECTION
+========================= */
+
+#projects {
+    background: #f8fafc;
+}
+
+#projects h2 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.projects-description {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    font-size: 17px;
+    color: #4b5563;
+}
+
+/* Project Cards Container */
+.project-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background: white;
+    padding: 35px 28px;
+    border-radius: 16px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+    position: relative;
+}
+
+/* Project Number */
+.project-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 23px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+/* Project Description */
+.project-card > p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* Skills Used */
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.project-skills span {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Project Button */
+.project-btn {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: letter-spacing 0.3s ease;
+}
+
+/* =========================
+   HOVER EFFECTS
+========================= */
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover .project-btn {
+    letter-spacing: 1px;
+}/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact {
+    background: #111827;
+    color: white;
+}
+
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    color: #d1d5db;
+}
+
+/* Main Contact Layout */
+.contact-container {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    text-align: left;
+}
+
+/* Left Side */
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+/* Contact Links */
+.contact-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background: #1f2937;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: translateX(8px);
+    background: #2563eb;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Send Button */
+.contact-form button {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 15px;
+
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}/* =========================
+   CONTACT RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    #contact {
+        padding: 60px 8%;
+    }
+
+    #contact h2 {
+        font-size: 35px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    #contact {
+        padding: 50px 6%;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .contact-link {
+        padding: 13px;
+        font-size: 15px;
+
+        /* Prevent long links from overflowing */
+        overflow-wrap: break-word;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 14px;
+    }
+}
